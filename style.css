@@ -1,0 +1,60 @@
+/* style.css */
+
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #e67e22;
+    --background-color: #ecf0f1;
+    --text-color: #fff;
+    --hover-color: #d35400;
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh; /* Butun ekran balandligini qamrab oladi */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    color: var(--text-color);
+}
+
+.centered-content {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.centered-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.contact-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-item:hover {
+    color: var(--hover-color);
+}
